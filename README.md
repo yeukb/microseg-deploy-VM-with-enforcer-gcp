@@ -16,6 +16,8 @@ These Terraform templates will deploy a VM on GCP with Enforcer installed and co
 
 3. SSH key pair
 
+4. A project has been created via your GCP console
+
 
 
 ## Deployment
