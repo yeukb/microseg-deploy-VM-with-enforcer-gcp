@@ -7,7 +7,6 @@ variable "ssh_public_key" {}
 variable "vmSize" {
     default = "n1-standard-1"
 }
-# variable "zone_name" {}
 
 # gcloud compute images list --filter ubuntu-os-cloud
 variable "image_name" {
