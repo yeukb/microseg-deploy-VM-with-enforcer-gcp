@@ -4,19 +4,25 @@ These Terraform templates will deploy a VM on GCP with Enforcer installed and co
 
 
 ## Prequisites:
-1. Create a cloud auto-registration policy on Prisma Cloud Console
+1. Create a new microsegmentation namespace
+
+2. Create a new project in Google Cloud Platform (or use an existing project)
+
+3. Create a cloud auto-registration policy on Prisma Cloud Console
     - Navigate to the namespace where you will deploy the Enforcer
     - Go to Network Security -> Namespaces -> Authorizations
     - click on the "+" sign and create a cloud auto-registration policy
     - Under "Auto-registration":
-        - For Cloud Provider, choose GCP.
-        - For Claims, enter the key=value pair of "projectid=<project_id>"
+        - For Cloud Provider, choose GCP
+        - For Claims, enter the key=value pairs:
+            - projectid=<Google_Project_ID>
 
-2. Terraform v1.0 and above
+4. Terraform v1.0 and above
 
-3. SSH key pair
+5. Install gcloud CLI
+    - https://cloud.google.com/sdk/docs/install
 
-4. A project has been created via your GCP console
+6. SSH key pair
 
 
 
